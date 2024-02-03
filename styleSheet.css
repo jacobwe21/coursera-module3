@@ -1,0 +1,94 @@
+/* Initialize Variables */
+:root {
+	--blue: hsl(201,84%,45%);
+	--lightBlue: hsl(201,87%,60%);
+	--orange: hsl(28,100%,50%);
+	--red: #B11;
+}
+
+* {
+  box-sizing: border-box; /* This makes it so that the padding & borders are included in the widths & heights of the HTML elements. */
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML & BODY - This helps make sure things work right */
+html {
+	height: 100%;
+}
+.container {
+	background: #0099FF;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 200%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+h3 {
+	font-weight: bold;
+	font-size: 120%;
+	float: right;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+}
+.menu-item {
+	background: #777;
+	color: #FFF;
+	border: 1px solid #000;
+}
+
+.food {
+	padding: 10px;
+	width: 150px;
+	margin-bottom: 10px;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.food-desc {
+	padding: 0px 10px 10px 10px;
+	clear: both;
+}
+.background-red {
+	color: #FFF;
+	background: var(--red);
+}
+.background-orange {
+	color: #000;
+	background: var(--orange);
+}
+.background-blue {
+	color: #000;
+	background: var(--lightBlue);
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+	.column {
+		width: 33.33%;
+	}
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+	.column:last-child {
+		width: 100%;
+	}
+}
+/* Mobile */
+@media (max-width: 767px) {
+	.column {
+		width: 100%;
+	}
+}
